@@ -1,0 +1,108 @@
+[
+  {
+    "line": 1,
+    "elements": [
+      {
+        "start_timestamp": "2022-04-06T15:54:48.449Z",
+        "before": [
+          {
+            "result": {
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.OrangeBank.StepDefinitions.Hooks.setUp()"
+            }
+          }
+        ],
+        "line": 4,
+        "name": "Search Orange Bank and verify number of results",
+        "description": "",
+        "id": "search-orange-bank-on-google;search-orange-bank-and-verify-number-of-results",
+        "after": [
+          {
+            "result": {
+              "duration": 645027700,
+              "status": "passed"
+            },
+            "match": {
+              "location": "com.OrangeBank.StepDefinitions.Hooks.tearDown(io.cucumber.java.Scenario)"
+            }
+          }
+        ],
+        "type": "scenario",
+        "keyword": "Scenario",
+        "steps": [
+          {
+            "result": {
+              "duration": 2910477400,
+              "status": "passed"
+            },
+            "line": 5,
+            "name": "User open the \"https://www.google.es\"",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"https://www.google.es\"",
+                  "offset": 14
+                }
+              ],
+              "location": "com.OrangeBank.StepDefinitions.MyStepDefs.userOpenThe(java.lang.String)"
+            },
+            "keyword": "When "
+          },
+          {
+            "result": {
+              "duration": 3360737000,
+              "status": "passed"
+            },
+            "line": 6,
+            "name": "User type \"Orange Bank\" in the search box",
+            "match": {
+              "arguments": [
+                {
+                  "val": "\"Orange Bank\"",
+                  "offset": 10
+                }
+              ],
+              "location": "com.OrangeBank.StepDefinitions.MyStepDefs.userTypeInTheSearchBox(java.lang.String)"
+            },
+            "keyword": "And "
+          },
+          {
+            "result": {
+              "duration": 44659700,
+              "status": "passed"
+            },
+            "line": 7,
+            "name": "Verify number of results is more than 100000 and is not less than 10000",
+            "match": {
+              "arguments": [
+                {
+                  "val": "100000",
+                  "offset": 38
+                },
+                {
+                  "val": "10000",
+                  "offset": 66
+                }
+              ],
+              "location": "com.OrangeBank.StepDefinitions.MyStepDefs.verifyNumberOfResultsIsMoreThan(int,int)"
+            },
+            "keyword": "And "
+          }
+        ],
+        "tags": [
+          {
+            "name": "@myTest"
+          }
+        ]
+      }
+    ],
+    "name": "Search Orange Bank on Google",
+    "description": "",
+    "id": "search-orange-bank-on-google",
+    "keyword": "Feature",
+    "uri": "file:src/test/resources/features/googleSearch.feature",
+    "tags": []
+  }
+]
